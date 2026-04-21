@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Security Alert Prank</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#000;color:#0f0;display:flex;justify-content:center;align-items:center;height:100vh;overflow:hidden}
+.container{text-align:center;padding:40px;border:2px solid #0f0;box-shadow:0 0 25px #0f0;max-width:700px}
+h1{font-size:56px;margin:0 0 20px;color:#f00;text-shadow:0 0 15px #f00}
+p{font-size:22px;margin:10px 0}
+.small{font-size:14px;color:#9f9;margin-top:20px}
+.blink{animation:blink 1s infinite}
+@keyframes blink{50%{opacity:0}}
+</style>
+</head>
+<body>
+<div class="container">
+<h1 class="blink">YOU ARE HACKED!</h1>
+<p>Your files are being uploaded to the cloud...</p>
+<p>Scanning passwords... Complete.</p>
+</div>
+<script>
+setTimeout(()=>alert('Prank complete 😄 Nothing was hacked.'),4000);
+</script>
+</body>
+</html>
